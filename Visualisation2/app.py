@@ -4,7 +4,6 @@ import altair as alt
 import geopandas as gpd
 import json
 import panel as pn
-import param
 
 alt.data_transformers.enable('json')
 pn.extension('vega')
