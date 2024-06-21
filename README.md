@@ -13,3 +13,9 @@ Altair python implementation of baby names dataset for IGR204 Telecom group proj
 - Install the following python dependencies: pandas, numpy, altair, geopandas, panel with pip. OR launch pip install -r requirements.txt
 - use the command: panel serve app.py
 - go to the communicated local host to see the panel app in web browser
+
+### Visualisation 3:
+- Go to the Visualisation3 folder
+- Install the following python dependencies: pandas, numpy, altair, geopandas, panel with pip. OR launch pip install -r requirements.txt
+- use the command: panel serve app.py
+- go to the communicated local host to see the panel app in web browser
