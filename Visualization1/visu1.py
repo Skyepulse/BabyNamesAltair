@@ -150,5 +150,20 @@ name_listbox.bind("<Double-Button-1>", lambda event: select_name(event, selected
 reset_button = ttk.Button(button_frame, text="Reset", command=reset_plot)
 reset_button.pack(pady=30, padx=20)
 
+# Most popular names button
+def find_most_popular_names():
+    total_counts = grouped.groupby('preusuel')['nombre'].sum()
+    most_popular = total_counts.nlargest(3).index.tolist()
+    return most_popular
+
+def add_most_popular():
+    global selected_names
+    most_popular_names = find_most_popular_names()
+    selected_names.extend(most_popular_names)
+    selected_names=unique(selected_names)
+    update_plot(selected_names)
+
+most_popular_button = ttk.Button(button_frame, text="3 Most Popular", command=add_most_popular)
+most_popular_button.pack(pady=10, padx=20)
 
 root.mainloop()
