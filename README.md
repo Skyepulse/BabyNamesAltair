@@ -25,3 +25,8 @@ After the comments, here are the desired changes:
 - Install the following python dependencies: pandas, numpy, altair, geopandas, panel with pip. OR launch pip install -r requirements.txt
 - use the command: panel serve app.py
 - go to the communicated local host to see the panel app in web browser
+
+#### CHANGES FOR FINAL IMPLEMENTATION
+Here are the new features:
+ - Name selection text field to manually set the name list
+ - Faceted timeline area chart to better view the evolution of the name usage per gender
